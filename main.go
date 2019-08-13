@@ -240,7 +240,6 @@ func (workflowController *ArgoWorkflowController) PushWorkflowChangesToQueue(obj
 }
 
 //TODO: printValues method needs to be replaced by actual DB CRUD method
-//since team is working on CRUD method, this method is added to test whether controller is monitoring the workflow properly
 func (workflowController *ArgoWorkflowController) printValues(obj1 *v1alpha1.Workflow, workflowAction string) {
 
 	if strings.Compare(workflowAction, AddAction) == 0 {
